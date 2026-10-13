@@ -58,10 +58,20 @@
     if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
   });
 
-  document.querySelectorAll(".faq-item button").forEach((button) => {
+  const faqButtons = [...document.querySelectorAll(".faq-item button")];
+  const setFaqState = (button, expanded) => {
+    const item = button.closest(".faq-item");
+    const answer = document.getElementById(button.getAttribute("aria-controls"));
+    button.setAttribute("aria-expanded", String(expanded));
+    answer.setAttribute("aria-hidden", String(!expanded));
+    item.classList.toggle("is-open", expanded);
+  };
+  faqButtons.forEach((button) => setFaqState(button, button.getAttribute("aria-expanded") === "true"));
+  document.querySelector(".faq-list")?.classList.add("is-enhanced");
+  faqButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const expanded = button.getAttribute("aria-expanded") === "true";
-      button.setAttribute("aria-expanded", String(!expanded));
+      const willOpen = button.getAttribute("aria-expanded") !== "true";
+      faqButtons.forEach((other) => setFaqState(other, other === button && willOpen));
     });
   });
 

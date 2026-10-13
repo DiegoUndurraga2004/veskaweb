@@ -199,16 +199,19 @@ tbody td::before { content: attr(data-label); color: var(--ink); font-size: .68r
 .faq-intro .section-kicker { margin-bottom: 3rem; }
 .faq-intro h2 { margin-bottom: 1.5rem; }
 .faq-intro > p { color: var(--ink-soft); }
+.faq-intro .faq-instruction { max-width: 25rem; margin-top: 2rem; padding: 1rem 0 0 1rem; border-top: 1px solid var(--line); border-left: 2px solid var(--clay); font-size: var(--xs); line-height: 1.55; }
 .faq-list { border-top: 1px solid var(--line-strong); }
 .faq-item { border-bottom: 1px solid var(--line-strong); }
 .faq-item h3 { margin: 0; }
 .faq-item button { width: 100%; min-height: 5rem; display: flex; justify-content: space-between; align-items: center; gap: 2rem; padding: 1.25rem 0; border: 0; background: transparent; text-align: left; font-size: var(--base); font-weight: 600; }
 .faq-item button b { flex: 0 0 auto; font-family: var(--serif); font-size: 1.8rem; font-weight: 400; transition: transform .25s; }
 .faq-item button[aria-expanded="true"] b { transform: rotate(45deg); }
-.faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .4s var(--ease); }
-.faq-answer p { min-height: 0; overflow: hidden; max-width: 43rem; margin: 0; color: var(--ink-soft); }
-.faq-item button[aria-expanded="true"] + .faq-answer { grid-template-rows: 1fr; }
-.faq-item button[aria-expanded="true"] + .faq-answer p { padding-bottom: 1.5rem; }
+.faq-answer { max-width: 43rem; }
+.faq-answer p { margin: 0; padding-bottom: 1.5rem; color: var(--ink-soft); }
+.faq-list.is-enhanced .faq-answer { display: grid; grid-template-rows: 0fr; opacity: 0; transition: grid-template-rows .4s var(--ease), opacity .3s ease; }
+.faq-list.is-enhanced .faq-answer p { min-height: 0; overflow: hidden; padding-bottom: 0; }
+.faq-list.is-enhanced .faq-item.is-open .faq-answer { grid-template-rows: 1fr; opacity: 1; }
+.faq-list.is-enhanced .faq-item.is-open .faq-answer p { padding-bottom: 1.5rem; }
 
 .contact { background: var(--wine); color: var(--paper-light); }
 .contact-grid { display: grid; gap: 4rem; }

@@ -151,8 +151,8 @@ export function renderPage(config) {
       </div>
     </section>
 
-    <section class="faq section" aria-labelledby="faq-title"><div class="shell faq-grid"><div class="faq-intro"><div class="section-kicker" data-reveal><p class="eyebrow">Preguntas frecuentes</p><span>08 — Dudas</span></div><h2 id="faq-title" data-reveal>Antes de <em>empezar.</em></h2><p data-reveal>Lo importante, explicado sin vueltas.</p></div>
-      <div class="faq-list">${faqs.map(([question, answer], i) => `<article class="faq-item" data-reveal><h3><button type="button" aria-expanded="false" aria-controls="faq-${i}"><span>${question}</span><b aria-hidden="true">+</b></button></h3><div class="faq-answer" id="faq-${i}"><p>${answer}</p></div></article>`).join("")}</div>
+    <section class="faq section" aria-labelledby="faq-title"><div class="shell faq-grid"><div class="faq-intro"><div class="section-kicker" data-reveal><p class="eyebrow">Preguntas frecuentes</p><span>08 — Dudas</span></div><h2 id="faq-title" data-reveal>Antes de <em>empezar.</em></h2><p data-reveal>Lo importante, explicado sin vueltas.</p><p class="faq-instruction" id="faq-instruction" data-reveal>Selecciona una pregunta para leer la respuesta. Solo se mantendrá una abierta a la vez.</p></div>
+      <div class="faq-list" aria-describedby="faq-instruction">${faqs.map(([question, answer], i) => `<article class="faq-item ${i === 0 ? "is-open" : ""}" data-reveal><h3><button type="button" aria-expanded="${i === 0 ? "true" : "false"}" aria-controls="faq-${i}" id="faq-button-${i}"><span>${question}</span><b aria-hidden="true">+</b></button></h3><div class="faq-answer" id="faq-${i}" role="region" aria-labelledby="faq-button-${i}"><p>${answer}</p></div></article>`).join("")}</div>
     </div></section>
 
     <section class="contact section" id="contacto" aria-labelledby="contact-title">

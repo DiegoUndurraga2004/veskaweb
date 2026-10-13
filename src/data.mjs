@@ -152,10 +152,10 @@ export const comparison = [
 ];
 
 export const faqs = [
-  ["¿Qué necesito enviarles?", "Información del negocio, servicios o productos, precios, datos de contacto, logo si existe y las mejores fotos disponibles. Si aún no tienes todo, podemos partir ordenando lo esencial."],
-  ["¿Incluye dominio y hosting?", "No están incluidos en el precio del plan. Te ayudamos a elegirlos y a dejar el sitio correctamente conectado."],
-  ["¿Puedo vender y recibir pagos en la web?", "Los planes publicados pueden mostrar un catálogo y derivar consultas o compras a WhatsApp. Carrito, pagos online, inventario y e-commerce completo se cotizan por separado."],
-  ["¿Podré cambiar el contenido por mi cuenta?", "Estos planes no incluyen panel de administración. Entregamos el contenido inicial cargado y los cambios futuros se pueden cotizar según necesidad."],
-  ["¿Cuánto demora?", "Depende del plan y de que el contenido esté disponible. Antes de comenzar confirmamos por escrito el calendario, los hitos y la fecha estimada de entrega."],
-  ["¿Qué significa una ronda de cambios?", "Es una revisión consolidada: reúnes todos tus comentarios y los aplicamos juntos en una misma etapa. Los cambios que alteren el alcance original se cotizan aparte."],
+  ["¿Qué necesito enviarles?", "Para comenzar necesitamos la información principal de tu negocio: servicios o productos, precios, datos de contacto, logo si existe y las mejores fotos que tengas. También sirve tu Instagram, una web anterior o referencias visuales. Si aún no tienes todo listo, partimos ordenando lo esencial y te indicamos qué falta."],
+  ["¿Incluye dominio y hosting?", "No están incluidos en el valor del plan porque su precio depende del proveedor y se pagan de forma periódica. Te ayudamos a elegir una opción adecuada, comprarla a tu nombre y dejar el sitio correctamente conectado."],
+  ["¿Puedo vender y recibir pagos en la web?", "Los planes publicados permiten mostrar productos, precios y disponibilidad, y llevar cada consulta o pedido a WhatsApp. Si necesitas carrito, pagos online, inventario o un e-commerce completo, lo revisamos y cotizamos como un proyecto distinto."],
+  ["¿Podré cambiar el contenido por mi cuenta?", "Estos planes no incluyen un panel de administración. Entregamos el contenido inicial cargado y listo para publicar. Después, puedes pedir cambios puntuales o contratar una modalidad de mantención según la frecuencia que necesites."],
+  ["¿Cuánto demora?", "El plazo depende del plan, del volumen de contenido y de que los textos e imágenes estén disponibles. Antes de comenzar definimos por escrito el calendario, las etapas de revisión y una fecha estimada de entrega."],
+  ["¿Qué significa una ronda de cambios?", "Es una etapa de revisión en la que reúnes todos tus comentarios en una sola lista. Aplicamos esos ajustes juntos para avanzar de forma ordenada. Los cambios que agreguen páginas, funciones o contenido fuera del alcance original se cotizan por separado."],
 ];
