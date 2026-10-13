@@ -41,6 +41,7 @@ export function renderPage(config) {
   <meta property="og:description" content="${site.description}">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_CL">${canonical}${socialMeta}
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="/assets/images/hero.avif" as="image" type="image/avif">
   <link rel="stylesheet" href="/assets/styles.css">
   <script>window.__VESKA_CONFIG__=${clientConfig};</script>
